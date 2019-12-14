@@ -1,0 +1,14 @@
+.area .main {
+    font-size: 8rem;
+    margin-top: 10%;    
+}
+
+@media screen and (max-width: 1100px) {
+    .area .main { font-size: 7rem;}
+
+}
+
+@media screen and (max-width: 900px) {
+    .area .main { font-size: 6rem;}
+}
+

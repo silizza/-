@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: url('Font/AnonymousPro.eot');
+    src: url('Font/AnonymousPro.eot?#iefix') format('embedded-opentype'),
+        url('/Font/AnonymousPro.woff2') format('woff2'),
+        url('/Font/AnonymousPro.woff') format('woff'),
+        url('/Font/AnonymousPro.ttf') format('truetype'),
+        url('/Font/AnonymousPro.svg#AnonymousPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.area .main {
+    margin-top: 5%;
+    width: 90%;    
+    font-size: 3rem;
+    text-align: left;
+    color: black;   
+}
+
+@media screen and (max-width: 1200px) {
+    .area .main { font-size: 2.5rem; margin-top: 3%}
+
+}
+
+
+
+
+
+
+
+

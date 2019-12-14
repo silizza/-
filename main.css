@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'XPLOR';
+    src: url('/Fonts/XPLOR/subset-XPLORBold.eot');
+    src: url('/Fonts/XPLOR/subset-XPLORBold.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/XPLOR/subset-XPLORBold.woff2') format('woff2'),
+        url('/Fonts/XPLOR/subset-XPLORBold.woff') format('woff'),
+        url('/Fonts/XPLOR/subset-XPLORBold.ttf') format('truetype'),
+        url('/Fonts/XPLOR/subset-XPLORBold.svg#XPLORBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Adigiana Ultra';
+    src: url('/Fonts/Adigiana\ Ultra/AdigianaUltra.eot');
+    src: url('/Fonts/Adigiana\ Ultra/AdigianaUltra.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/Adigiana\ Ultra/AdigianaUltra.woff2') format('woff2'),
+        url('/Fonts/Adigiana\ Ultra/AdigianaUltra.woff') format('woff'),
+        url('/Fonts/Adigiana\ Ultra/AdigianaUltra.ttf') format('truetype'),
+        url('/Fonts/Adigiana\ Ultra/AdigianaUltra.svg#AdigianaUltra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Forum';
+    src: url('/Fonts/Forum/Forum.eot');
+    src: url('/Fonts/Forum/Forum.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/Forum/Forum.woff2') format('woff2'),
+        url('/Fonts/Forum/Forum.woff') format('woff'),
+        url('/Fonts/Forum/Forum.ttf') format('truetype'),
+        url('/Fonts/Forum/Forum.svg#Forum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+html {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    html { font-size: 14px;}
+
+}
+
+@media screen and (max-width: 800px) {
+    html { font-size: 12px;}
+
+}
+
+@media screen and (max-width: 700px) {
+    html { font-size: 10px;}
+
+}
+
+@media screen and (max-width: 600px) {
+    html { font-size: 8px;}    
+
+}
+
+@media screen and (max-width: 450px) {
+    html { font-size: 6px;}    
+
+}
+.area {
+   
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background-image: url(/Imgs/background.png);
+    z-index: 20;
+}  
+
+.area .main {    
+   
+    display: inline-block;    
+    color: rgb(3, 143, 27);
+    text-align: center;
+    margin: auto;
+    font-family: 'Forum', sans-serif;
+    background-color: rgba(255, 248, 220, 0.479);
+    box-shadow: 0 0 30px rgb(255, 248, 220);
+   
+}
+
+.area .header {  
+    margin: 1% 10%;
+    align-items: center;
+    justify-content: space-between;    
+    display: flex;  
+    flex-wrap: wrap;
+          
+}
+
+.header div,
+.header select,
+.header span {
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;        
+    
+    cursor: pointer;    
+    font-family: 'XPLOR', sans-serif;  
+    font-size: 2.5rem;
+    color: #009906; 
+   
+}
+
+
+.header .active {
+    border-top: solid #009905d2 3px;
+    border-bottom: solid #009905d2 3px;
+}  
+   
+
+.startWindow {
+    position: fixed;
+    width: 100%;
+    height: 100%;  
+    top: 0;
+    left: 0; 
+    background-color: rgba(13, 170, 39, 0.308);
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.startWindow .button {    
+    margin: 2px;
+    height: 40%;
+    width: 20%;
+    font-size: 4rem; 
+    color: #ffde59;;   
+}
+
+#newHeader {
+    font-size: 2rem;
+    font-family: 'Adigiana Ultra';
+    display: none;
+    background-color: rgba(13, 170, 39, 0.308);
+    z-index: 20;
+    position: absolute;
+    width: 100%;    
+    top: 0; 
+    align-items: center;
+    justify-content: center;
+    margin: auto;     
+}
+
+#newHeader .button {
+    
+    margin: 2%;
+    padding: 2% 0.5%;
+    font-size: 2rem;     
+     
+}
+
+.button {
+    
+    border-radius: 20%;
+    cursor: pointer;    
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.781);
+    border: none;
+    font-family: 'Adigiana Ultra', sans-serif;
+}
+
+.next-skip-buttons { 
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    
+}
+
+.next-skip-buttons .button {
+    
+    margin: 1px 10px;
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 600px) {    
+    .next-skip-buttons .button {
+                                margin: 1px 6px;
+                                font-size: 30px;
+                                width: 42px;
+                                height: 42px;}
+
+}
+
+@media screen and (max-width: 400px) {    
+    .next-skip-buttons .button {
+                                margin: 1px 5px;
+                                font-size: 20px;
+                                width: 35px;
+                                height: 35px;}
+}
+
+.next-skip-buttons .button.cancel{
+    width: 150px;
+    font-size: 30px;
+    border-radius: 20%/50%;  
+}
+
+.button.ok {
+    background-color: #009906;
+}
+
+.button.cancel {    
+    background-color: red;
+    color: #ffde59;
+}
+
+.button:hover {
+    filter: brightness(80%);
+}
+
+.modal .message {
+    position: relative;
+    height: 40%;
+    width: 50%;
+    top: 20%;
+    margin: auto;
+    text-align: center;
+    font-family: Adigiana Ultra, sans-serif;
+    font-size: 2.5rem;
+    background-color: #009906;
+    padding: 1%;
+    border-radius: 5%/12%;
+    color: #ffde59;
+}
+
+.message>h1 {
+    position: relative;
+    top: -15%;
+}
+
+.message>p {
+    position: relative;
+    top: -25%;
+}
+
+.modal .balloon {
+    position: absolute;
+    width: 7%;    
+    transition: top 2s linear;
+    
+}
+
+.modal .owl {
+    width: 18%;
+    position: absolute;
+    top: -45%;
+    margin-left: -6%;    
+}
+
+.modal .button {
+    position: absolute;
+    right: 0;
+    bottom: -23%;
+    border-radius: 5%/12%;
+    font-family: Adigiana Ultra, sans-serif;
+    font-size: 2.5rem;
+    color: #ffde59;
+    padding: 0 1%;  
+}

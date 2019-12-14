@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">        
+        <link rel="stylesheet" href="/menu.css" />        
+        <link rel="stylesheet" href="/main.css" />
+        <link rel="stylesheet" href="text.css" />
+        
+        <title>Учимся читать</title>
+
+</head>
+<body>
+    
+    <script src="/menu.js" type="text/javascript"></script>
+    <script src="/menu_handler.js"></script>
+    <script src="/lettersContaier.js"></script> 
+    <section id = "area" class="area letters"> 
+        <header id="header" class="header">         
+                            
+            <select id="complexity">               
+                <option value="simple" slected>Простой</option>                
+                <option value="complex">Сложный</option>
+                
+            </select>          
+
+                          
+                <div id="selectTime">На время</div>
+                       
+        </header>
+
+        <header id="newHeader" class="header" hidden>
+            <button id="stopButton" class="button cancel">Отмена</button>
+            <time id="stopwatch"></time>
+        </header>
+        <main class="main"></main> 
+        <div class="next-skip-buttons">          
+           
+            <button id="prevButton" class="button ok">◀</button>
+            <button id="okButton" class="button ok">▶</button>
+        </div> 
+    <script src="/MessageWindow.js"></script>
+    <script src="/main.js"></script>
+    <script src="text.js"></script>     
+</body>
+</html>

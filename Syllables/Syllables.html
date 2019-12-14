@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/menu.css" />
+        <link rel="stylesheet" href="syllables.css" />
+        <link rel="stylesheet" href="/main.css" />
+        
+        <title>Учимся читать</title>
+
+</head>
+<body>
+    
+    <script src="/menu.js" type="text/javascript"></script>
+    <script src="/menu_handler.js"></script>
+    <script src="/lettersContaier.js"></script> 
+    <section id = "area" class="area letters"> 
+        <header id="header" class="header">   
+                   
+                <select id="complexity">               
+                    <option value="simple">Простые</option>
+                    <option value="middle">Средние</option>
+                    <option value="complex">Сложные</option>
+                    <option value='different'>Разные</option>
+                </select>      
+                
+                <select id="selectTime">
+                    <option value="notSelected" selected>Не на время</option>
+                    <option value="30sec">30секунд</option>
+                    <option value="1min">1 минута</option>
+                    <option value="2min">2 минуты</option>
+                    <option value="3min">3 минуты</option>
+                </select>
+                        
+        </header>
+
+        <header id="newHeader" class="jheader" hidden>
+            <button id="stopButton" class="button cancel">Отмена</button>
+            <time id="stopwatch"></time>
+        </header>
+        <main class="main"></main> 
+        <div class="next-skip-buttons">           
+            <button id="skipButton" class="button cancel" hidden>Пропустить</button>
+            <button id="prevButton" class="button ok">◀</button>
+            <button id="okButton" class="button ok">▶</button>
+        </div>           
+    
+    
+    <script src="/MessageWindow.js"></script>
+    <script src="/main.js"></script>
+    <script src="syllables.js"></script>  
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+ .area .main {    
+    
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);   
+    background-color: rgba(255, 248, 220, 0.479);
+    box-shadow: 0 0 30px rgb(255, 248, 220);
+}
+
+.container {
+    font-size: 7vw;  
+    font-weight: bold;  
+   
+}
+

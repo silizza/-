@@ -1,0 +1,62 @@
+.container {
+    display: block;
+    position: absolute;
+    bottom: 0;    
+    border: none;   
+    height: 50%; 
+    min-height: 180px; 
+}
+
+.container.vowels {
+    left: 10%;
+}
+
+.container.consonants {
+    right: 10%;
+}
+
+.container.active {
+    filter: brightness(60%);
+}
+
+.area .main {
+    font-size: 20rem;
+    background-color: transparent;
+    font-weight: bold;
+    box-shadow: none; 
+    margin: 1%;
+     
+}
+.main span {    
+    cursor: pointer; 
+    z-index: 50;  
+}
+
+.vowel.falling {
+    
+    animation: fallingInVowels 1s linear 1;
+}
+
+.consonant.falling {
+    
+    animation: fallingInConsonants 1s linear 1;
+}
+.container.target {
+    animation: containerAnimation 1s linear 1;
+}
+
+@keyframes fallingInVowels {
+    0% {left: 11%; top: 0%;}
+    50% { left: 11%; top: 40%; z-index: inherit; transform: rotate(360deg) scale(0.5);}
+    100% {left: 11%; bottom: 0%; z-index: inherit; transform: rotate(540deg) scale(0.1); display: none;}
+}
+
+@keyframes fallingInConsonants {
+    0% {left: unset; right: 11%; top: 0%;}
+    50% {left: unset; right: 11%; top: 40%; z-index: inherit; transform: rotate(360deg) scale(0.5);}
+    100% {left: unset; right: 11%; bottom: 0%; z-index: inherit; transform: rotate(540deg) scale(0.1); display: none;}
+}
+
+@keyframes containerAnimation {    
+    50%{transform: scale(1.1); bottom: 3%;}   
+}

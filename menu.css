@@ -1,0 +1,113 @@
+
+.menu .round_button {
+    position: fixed;
+    top: 1%;
+    left: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    z-index: 50;
+    border: none;
+}
+
+.menu .round_button:hover {
+    box-shadow: 0 0 6px rgb(0, 0, 0);
+    filter: brightness(110%);
+}
+
+.menu .lines,
+.menu .lines::after,
+.menu .lines::before {
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    border-radius: 20%;
+    background-color: #009906;
+}
+
+.menu .lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu .lines::before {
+    content: "";
+    top: -9px; 
+}
+
+.menu .lines::after {
+    content: "";
+    top: 9px;
+}
+.menu.active .round_button {
+    background-color: #f1d884;
+}
+
+
+.menu.active .lines {
+    background-color: transparent;
+}
+
+.menu.active .lines::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu.active .lines::before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.menu .nav {
+    font-family: 'XPLOR', sans-serif;
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top: 15%;   
+    min-width: 250px;
+    overflow: auto;  
+    left: -100%;  
+    z-index: 50;     
+}
+
+.menu.active .nav {
+    left: 0;
+}
+
+.menu .link {       
+    font-size: 2rem;
+    font-stretch: extra-expanded;
+    margin: 1% 5px;       
+    text-decoration: none;
+    color: #009906;
+    text-align: center;    
+    padding: 5% 5%;
+    border-radius: 7%/45%;
+    text-transform: uppercase;    
+    background-color: #f1d884;
+    
+}
+
+.menu #vowConLink {
+    padding: 0px;
+    font-size: 1.6rem;
+}
+.menu .link:hover {
+    filter: brightness(120%);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 49;
+}
+
+.modal.active {
+    display: block;
+}
